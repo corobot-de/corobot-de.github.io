@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de-formal" dir="ltr" class="client-nojs">
+  <head>
+
+    <!-- Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Logo vector created by roserodionova - www.freepik.com -->
+    <a href="https://www.freepik.com/free-photos-vectors/logo"></a>
+
+    <!-- Open Sans  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+    <!-- Botframework Css -->
+    <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+
+    <!-- Favicon & Titel -->
+    <link rel="favicon.ico" type="image/x-icon" href="favicon.ico">
+    <title>Corobot</title>
+
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"
+    ></script>
+  </head>
+
+<body>
+  <div class="container mrg_bot_20">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-8">
+        <h1> Corobot </h1>
+      </div>
+      <div class="col-lg-4 col-md-3 col-sm-3">
+        <a href="https://wirvsvirushackathon.org/">
+        <img src="wvv.png" alt="virvsvirus" class="wvv">
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-7 col-sm-12 pd_right_20">
+
+        <div class="row mrg_bot_20">
+          <div class="col-md-12 col-sm-7">
+            <p>
+              Wilkommen bei <strong> Corobot</strong>! <strong>Corobot</strong> hilft Ihnen herauszufinden, ob Sie sich wegen eines möglichen Risikos zur Ansteckung mit COVID-19 an Ihr lokales Gesundheitsamt wenden sollten.
+              Falls nötig wird <strong>Corobot</strong> außerdem mit Ihnen die für das Gesundheitsamt nötigen Daten vorbereiten, um Ihnen langwierige Telefonate und anderen BürgerInnen langwierige Wartezeiten in Hotlines zu ersparen.
+              <br>
+              <br>
+              Keine der eingegeben Daten werden dauerhaft gespeichert. Stattdessen erhalten Sie am Ende der Unterhaltung mit <strong>Corobot</strong> eine Übersicht mit Empfehlungen und relevanten Daten, die Sie an Ihr lokales Gesundheitsamt übermitteln können.
+              <strong>Dieser Bot ist aktuell ein Prototyp und nur zu Testzwecken zu verwenden</strong>.
+              Die Projektseite befindet sich auf <strong><a href="https://github.com/Maxwingber/corobot">GitHub</a></strong>.
+              <br>
+              <br>
+              Sagen Sie rechts im Chatfenster <strong>Hallo</strong>, <strong>Grüß Gott</strong>, <strong>Servus</strong>,<strong> Moin</strong> oder die Begrüßung Ihrer Wahl, um <strong>Corobot</strong> aufzuwecken.
+            </p>
+          </div>
+          <div class="col-md-12 col-sm-5">
+            <img src="195.jpg" alt="corobot" class="corobot">
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-5 col-sm-12 frame-height">
+<!--         <iframe src='https://webchat.botframework.com/embed/b71d167f-b725-4ead-88d3-6c604abcb6a3?s=QZiIZIo0Vo0._cN_e5ALKSAjq9M_tOCWflQrD01uR8Kurensi83LHrw'></iframe>
+ -->
+        <div id="bot"/>
+          <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+          <script>
+            BotChat.App({
+              directLine: { secret: "QZiIZIo0Vo0._cN_e5ALKSAjq9M_tOCWflQrD01uR8Kurensi83LHrw" },
+              user: { id: 'Sie' },
+              bot: { id: 'Corobot' },
+              resize: 'detect'
+            }, document.getElementById("bot"));
+          </script>
+        </div>
+      </div>
+
+  </div>
+</body>
