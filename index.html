@@ -44,7 +44,6 @@
 
     <div class="row">
       <div class="col-md-7 col-sm-12 pd_right_20">
-
         <div class="row mrg_bot_20">
           <div class="col-md-12 col-sm-7">
             <p>
@@ -53,11 +52,11 @@
               <br>
               <br>
               Keine der eingegeben Daten werden dauerhaft gespeichert. Stattdessen erhalten Sie am Ende der Unterhaltung mit <strong>Corobot</strong> eine Übersicht mit Empfehlungen und relevanten Daten, die Sie an Ihr lokales Gesundheitsamt übermitteln können.
-              <strong>Dieser Bot ist aktuell ein Prototyp und nur zu Testzwecken zu verwenden</strong>.
+              <strong>Dieser Bot ist aktuell ein Prototyp und nur zu Testzwecken zu verwenden</strong>. Weitere Informationen zum Projekt finden Sie  <strong><a href="#project_description">am Ende dieser Seite</a></strong>.
               Die Projektseite befindet sich auf <strong><a href="https://github.com/Maxwingber/corobot">GitHub</a></strong>.
               <br>
               <br>
-              Sagen Sie rechts im Chatfenster <strong>Hallo</strong>, <strong>Grüß Gott</strong>, <strong>Servus</strong>,<strong> Moin</strong> oder die Begrüßung Ihrer Wahl, um <strong>Corobot</strong> aufzuwecken.
+              Sagen Sie rechts im Chatfenster <strong>Hallo</strong>, <strong>Grüß Gott</strong>, <strong>Servus</strong>,<strong> Moin</strong> oder die Begrüßung Ihrer Wahl, um <strong>Corobot</strong> aufzuwecken
             </p>
           </div>
           <div class="col-md-12 col-sm-5">
@@ -81,6 +80,48 @@
           </script>
         </div>
       </div>
+  </div>
+</body>
+  <body class="background-more-info">
+  <div class="row-more-info">
+    <h1 id="project_description">Das Projekt</h1>
+    <p>
+        Während des <a href="https://wirvsvirushackathon.org/">WirVsVirus</a> Hackathon haben wir Gesundheitsämter
+        gefragt, welche Probleme bei der Identifizierung von Fällen von COVID-19 bestehen.
+    </p>
 
+    <h2>Die Ergebnisse</h2>
+        <ul>
+          <li>Viele Riskikofaktoren werden wimmer wieder abgefragt: Auslandsaufenthalte, Kontakte zu Infizierten der Risikoklassen 1 und 2, Symptome</li>
+          <li>Es gibt unterschiedlichste Registrierungsverfahren bei Kommunen und Ländern und bisher fehlt oftmals ein nutzbarer Best Practice</li>
+          <li>Es herrschen signifikant unterschiedliche Technologiestandards: Einige Komunen fragen Daten bereits automatisiert über Websiten ab während andere telefonisch (und auf Papier!) Stammdaten aufnehmen</li>
+          <li>Viel zu viel Zeit wird für die Aufnahme und Korrektur der Personendaten verbraucht</li>
+        </ul>
+    <p>
+      Ein besonderer Dank gebührt folgenden Gesundheitsämtern. Sie haben sich trotz der besonderen Situation die Zeit genommen und sich die Mühe gemacht, uns bei der Konkretisierung der Problempunkte zu helfen.
+    </p>
+    <ul>
+      <li>Gesundheitsamt Bamberg</li>
+      <li>Gesundheitsamt Berlin-Spandau</li>
+      <li>Gesundheitsamt Emden</li>
+      <li>Gesundheitsamt Helmstedt</li>
+      <li>Gesundheitsamt Hof</li>
+      <li>Gesundheitsamt Main-Taunus-Kreis</li>
+      <li>Gesundheitsamt Neustadt Bad-Dürkheim</li>
+      <li>Gesundheitsamt Soest</li>
+    </ul>
+    <h2>Lösung</h2>
+    <p>
+        <strong>Corobot</strong> ermöglicht die automatisierte Datenaufnahme und -auswertung bei Menschen, die aufgrund der COVID-19-Pandemie in Deutschland die lokalen Gesundheitsämter kontaktieren.
+        <strong>Corobot</strong> ist mit jedem beliebigem Frontend verknüpfbar und kann dadurch auf einer Website, in einem <a href="t.me/Corobotbot">Telegram-Bot</a> oder am Telefon als Sprachcomputer kontaktiert werden.
+    </p><p>
+      Die Möglichkeit zur Integration als Sprachcomputer ist besonders für Menschen ohne Internetzugang sowie zur Integration in Bürgerhotlines extrem wichtig. Abhängig von den angegebenen Risikofaktoren werden peronalisierte Informationen und Verhaltensratschläge angezeigt.
+        Das ermittelte Risikoprofil und die Stammdaten werden bei Bedarf als Data Takeout angeboten statt zentral gespeichert, um diese maschinen- und menschenlesbar, gesammelt und datenschutzfreundlich an das lokale Gesundheitsamt übermittelbar zu machen.
+        Dadurch wird <strong>Corobot</strong> die Gespräche in Hotlines verkürzen, einen höheren Durchsatz erzeugen und
+        damit die Wartezeiten für Bügerinnen und Bürger verkürzen.
+      </p>
+      <p>
+        <em>Technisches: Der Bot bietet ein einfaches REST-Interface zur Anbindung an weitere Clients. Entwickelt ist er in Python mit  Microsoft Bot Framework v4. Er lässt sich sehr einfach extrem skalierbar auf Microsoft Azure deployen.</em>
+      </p>
   </div>
 </body>
